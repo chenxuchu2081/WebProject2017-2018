@@ -1,0 +1,39 @@
+INSERT INTO `cart`.`products` (
+`id` ,
+`name` ,
+`image` ,
+`price`
+)
+VALUES (
+'1', 'DB9', 'DB9.jpg', '360000'
+), (
+'2', 'DB11', 'DB11.jpg', '365000'
+), (
+'3', '458 italia', '458 italia.jpg', '345000'
+), (
+'4', '488 pista', '488 pista.jpg', '65000'
+), (
+'5', '599', '599.jpg', '436500'
+), (
+'6', 'dawn', 'dawn.jpg', '265000'
+), (
+'7', 'ghost', 'ghost.jpg', '136000'
+), (
+'8', 'grancabrio', 'grancabrio.jpg', '165000'
+), (
+'9', 'granturismo', 'granturismo.jpg', '764000'
+), (
+'10', 'Levante', 'Levante.jpg', '965000'
+), (
+'11', 'Macan', 'Macan.jpg', '350000'
+), (
+'12', 'murcielago', 'murcielago.jpg', '250000'
+), (
+'13', 'phantom', 'phantom.jpg', '850000'
+), (
+'14', 'Porsche Panamera 4S', 'Porsche Panamera 4S.jpg', '330000'
+), (
+'15', 'Rapide', 'Rapide.jpg', '150000'
+), (
+'16', 'Reventon', 'Reventon.jpg', '3500000'
+);

@@ -1,0 +1,228 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  background-color:#f4f4f4;
+  padding:0;
+  margin:0;
+}
+
+
+article{
+    padding-left: 200px;
+    padding-right: 250px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+article h2{
+    font-size: 60px;
+    text-align: center;
+	
+    
+}
+article button{
+     background-color: #32CD32;
+    cursor: pointer;
+    padding: 25px;
+    width: 100%;
+	height:100%;
+    border: 0;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    transition: 1.6s;
+    text-decoration: underline;
+    text-shadow: 1px,1px,0px,#2196F3;
+	  font-style: italic;
+
+	  
+}
+
+#car_brand_Sidenav{    
+    position: static;
+}
+
+#car_brand_Sidenav a {
+	 position: relative;
+    left: 0px;
+    padding: 15px; 
+    margin-top: 100px;
+    width: 100px; 
+    text-decoration: none;
+    font-size: 15px; 
+    color: white; 
+    border-radius: 0 10px 10px 0; 
+}
+
+#FERRARI {
+
+    background-color: #32CD32;
+}
+
+#PORSCHE {
+
+    background-color: #2196F3; /* Blue */
+}
+
+#LAMBORGHINI {
+
+    background-color: #f44336; /* Red */
+}
+
+#MASERATI{
+
+    background-color: #555; /* Light Black */
+}
+
+#ROLLSROYCE{
+
+    background-color: #004bff;
+}
+
+#ASTONMARIN{
+ 
+    background-color: #FFA500;
+}
+
+#car_brand_Sidenav a:hover {
+    left: 0; 
+}
+
+
+#ferrari_color{
+   width:100%;
+	height:100%;
+  background: #32CD32;
+  background-image: gradient(top, #32CD32,#86dd73);
+  background-image: linear-gradient(to bottom, #32CD32,#86dd73);
+}
+#porsche_color{
+	width:100%;
+	height:100%;
+  background: #3498db;
+  background-image: gradient(top, #3498db, #2cb3b8);
+  background-image: linear-gradient(to bottom, #3498db, #2cb3b8);
+}
+#lamborghini_color{
+	width:100%;
+	height:100%;
+  background: #f44236;
+  background-image: linear-gradient(top, #f44236, #db9174);
+  background-image: linear-gradient(to bottom, #f44236, #db9174);
+}
+#maserati_color{
+	width:100%;
+	height:100%;
+  background: #555;
+  background-image: linear-gradient(top, #555, #a1a2a8);
+  background-image: linear-gradient(to bottom, #555, #a1a2a8);
+}
+#rollsroyce_color{
+	width:100%;
+	height:100%;
+    background: #004dff;
+  background-image: linear-gradient(top, #004dff, #4c89b8);
+  background-image: linear-gradient(to bottom, #004dff, #4c89b8);
+}
+#astonmartin_color{
+	width:100%;
+	height:100%;
+    background: #ffa600;
+  background-image: linear-gradient(top, #ffa600, #fab061);
+  background-image: linear-gradient(to bottom, #ffa600, #fab061);
+}
+#carlogo{
+	margin:4%;
+	width:auto;
+	height:auto;
+
+}
+
+#cartext{
+	
+	font-family: arial;
+	background-color:#696969;
+	padding:auto;
+	font-size:18px;
+	color: #ffffff;
+	margin-top:2px;
+	text-align:center;
+	margin-bottom:10px;
+	
+}
+#car_photo{
+	margin-bottom:10px;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+  color: white; 
+}
+
+
+
+ /* more button */
+.brandlist {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #808080;
+    overflow-x: hidden;
+    transition: 0.6s;
+    padding-top: 60px;
+}
+
+.brandlist  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 23px;
+    color: #f4f4f4;
+    display: block;
+    transition: 0.3s;
+}
+
+.brandlist  a:hover {
+    color: #f1f1f1;
+}
+
+.brandlist .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+
+
+@media screen and (max-height: 450px) {
+  .brandlist {padding-top: 15px;}
+  .brandlist a {font-size: 18px;}
+}
+/*max-width*/
+@media screen and (max-width:1280px){
+	#cartext{
+	font-size:17px;
+
+}
+#carlogo{
+	margin:5%;
+	width:auto;
+	height:auto;
+
+}
+
+article{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+}
+
+	

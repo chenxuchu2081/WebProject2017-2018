@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <title> 車</title>
+   <meta charset="utf-8" >
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <meta name="author" content="CHEN xuchu,Chiu Ka Yau">
+   
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- link CND-->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css"><!-- link CND-->
+      <script type="text/javascript" src="../JavaScript/index.js"></script>  <!--javascript link file-->
+        
+      <script src="../jslib/jquery-3.3.1.min.js"></script>
+       <link rel="stylesheet" href="../css/header.css"> <!--css link file-->
+       <link rel="stylesheet" href="../css/Footer.css"> <!--css footer link-->
+       <link rel="stylesheet" href="../css/brand.css"> <!--css brand link-->
+	 
+
+	<script>       
+    $(document).ready(function(){
+        //slide to show or hide the contents
+     $(".btn1").click(function(){ $(".car_information1").slideToggle();});
+     $(".btn2").click(function(){ $(".car_information2").slideToggle();});
+      $(".btn3").click(function(){ $(".car_information3").slideToggle();});
+       $(".btn4").click(function(){ $(".car_information4").slideToggle();});
+	    $(".btn5").click(function(){ $(".car_information5").slideToggle();});
+		 $(".btn6").click(function(){ $(".car_information6").slideToggle();});
+    });
+</script>
+<style>
+.car_information2 {
+    display: none;
+}
+.car_information3 {
+    display: none;
+}
+.car_information4 {
+    display: none;
+}
+.car_information5 {
+    display: none;
+}
+
+</style>
+   
+   
+   </head>
+   
+   <body>
+   
+   <script src="../javascript.js"></script>
+   
+    <header>
+	  <div id="logo">
+          <img src="../Picture/indexlogo.png" width="100" height="100">
+        </div>
+
+    <div class="all_link" id="down_link">
+            <a class="home" href="../index.html"><i class="fa fa-home"></i></a>
+            <a href="../News.html">News</a>
+            <a href="../About.html">About</a>
+			<a href="../GPS.html">GPS</a>
+            <a href="B_Ferrari.html">Brands</a>
+            <a href="../form.php" target="_blank">Login</a>
+			 <a href="../GuestbookIndex.php">GuestBook</a>
+          <a href="../shopping_cart/shoppingcart.php">Shopping</a>
+			         
+          <a href="javascript:void(0);" class="icon" onclick ="SlideDownShowLink()">&#9776;</a>
+      </div>
+	</div>	
+    </header>
+
+
+
+
+
+
+
+
+
+
+       <!----->
+      <section>
+   <div id="mybrandlist" class="brandlist">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 
+  <a href="B_Ferrari.html">法拉利</a>
+  <a href="B_Porsche.html">保時捷</a>
+  <a href="B_lamborghini.html">藍寶堅尼</a>
+  <a href="B_maserati.html">瑪莎拉蒂</a>
+  <a href="B_rollsroyce.html">勞斯萊斯</a>
+  <a href="B_astonmartin.html">奧斯頓·馬丁</a>
+</div>
+<span style="font-size:26px;cursor:pointer" onclick="openNav()">&#9776; 更多品牌</span>
+<script>
+//javascript button onclick meun
+function openNav() {
+    document.getElementById("mybrandlist").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mybrandlist").style.width = "0";
+}
+//end
+</script>
+       </section>
+	
+	
+	<article>
+         <h2 class="w3-opacity">藍寶堅尼</h2>
+		<h3 class="cartext"><center> Lamborghini </center></h3>
+
+		<div id ="carlogo">
+	<center><img src="../Picture/lamborghini/lamborghini1.png" width="200" height="240" style="margin-top:20px;"></center>	
+	</div>
+	
+        <button class="btn1" id="lamborghini_color"><center>Lamborghini Aventador</center></button>
+        <div class="car_information1">
+         <center><img src="../Picture/lamborghini/Aventador.jpg" width="100%" height="30%;" /></center>
+		
+         <div id="cartext">
+		<p>--型號:Lamborghini Aventador S Coupe
+		<p>--原廠價:2700萬 --生產年份:2018年
+		<p>--排氣量:6498CC   --變速系統:自手排7速
+		<p>--最大馬力:740hp@8400rpm  --最大扭力:70.4kgm@5500rpm
+		
+		</div>
+        </div>
+
+        <button class="btn2" id="lamborghini_color"><center>Lamborghini Centenario</center></button>
+        <div class="car_information2">
+		<center><img src="../Picture/lamborghini/centenario.jpg" width="100%" height="30%;" /></center>
+		
+         <div id="cartext">
+		<p>--型號:Lamborghini Centenario Centenario
+		<p>--原廠價:10000萬 --生產年份:2018年
+		<p>--排氣量:6498CC   --變速系統:自手排7速
+		<p>--最大馬力:770hp@8500rpm  --最大扭力:70.38kgm@5500rpm
+		
+		</div>
+
+        </div>
+
+       <button class="btn3" id="lamborghini_color"><center>Lamborghini Huracan</center></button>
+        <div class="car_information3">
+         <center><img src="../Picture/lamborghini/huracan.jpg" width="100%" height="30%;" /></center>
+		
+         <div id="cartext">
+		<p>--型號:Lamborghini Huracan Spyder RWD Spyde
+		<p>--原廠價:1358萬 --生產年份:2018年
+		<p>--排氣量:5204CC   --變速系統:自手排7速
+		<p>--最大馬力:580hp@8000rpmm  --最大扭力:55.1kgm@6500rpm
+		
+		</div>
+        </div>
+
+        <button class="btn4" id="lamborghini_color"><center>Lamborghini Murcielago</center></button>
+        <div class="car_information4">
+        <center><img src="../Picture/lamborghini/murcielago.jpg" width="100%" height="30%;" /></center>
+		
+         <div id="cartext">
+		<p>--型號:Lamborghini Murcielago LP670-4 SuperVeloce
+		<p>--原廠價:2240萬 --生產年份:2010年
+		<p>--排氣量:6496CC   --變速系統:自手排6速
+		<p>--最大馬力:67hp@8000rpm  --最大扭力:67.3kgm@6500rpm
+		
+		</div>
+        </div>
+		
+		<button class="btn5" id="lamborghini_color"><center>Lamborghini Reventon</center></button>
+        <div class="car_information5">
+        <center><img src="../Picture/lamborghini/Reventon.jpg" width="100%" height="30%;" /></center>
+		
+         <div id="cartext">
+		<p>--型號:Lamborghini Reventon Roadster
+		<p>--原廠價:1500萬 --生產年份:2010年
+		<p>--排氣量:6496CC   --變速系統:自手排6速
+		<p>--最大馬力:670hp@8000rpm  --最大扭力:67.3kgm@6500rpm
+		
+		</div>
+        </div>
+
+    </article>
+	
+
+
+	
+	
+	<footer class="footer-container">
+
+			<div class="footer-left">
+
+
+				<p class="footer-links">
+					<a href="../index.html">Home</a>
+					·
+					<a href="../GuestbookIndex.php">GuestBook</a>
+					·
+					<a href="../About.html">About</a>
+					·
+                    <a href="../shopping_cart/shoppingcart.php">Shopping</a>
+                    .
+                    <a href="#">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Sports car Company &copy; 2018</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>地區:地區:灣仔,火炭,將軍澳</span>
+					<a href="GPS.html">詳情請按這裏</a></p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>電話: +852 68005521</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p>電郵:<a href="mailto: 2018projectdb@gmail.com"> 2018projectdb@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>關於</span>
+					讓人們隨時隨地買車,了解品牌,交流心得,分享感想的平台
+				</p>
+
+				<div class="footer-icons">
+			<a href="https://zh-hk.facebook.com/" class="fa fa-facebook"></a>
+			<a href="https://twitter.com/?lang=zh-tw" class="fa fa-twitter"></a>
+			<a href="https://www.google.com.hk/" class="fa fa-google"></a>
+			<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+				</div>
+
+			</div>
+		
+		<div id="footer">
+			 <p>
+			  Webpage made by Chiu Ka Yau,CHEN xuchu,吳國宏 </a>
+			  </p>
+		 </div>	  
+    </footer>
+	
+	
+   </body>
+</html>

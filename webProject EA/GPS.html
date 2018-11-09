@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+   <title> 車</title>
+   <meta charset="utf-8" >
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- link CND-->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css"><!-- link CND-->
+      <script type="text/javascript" src="JavaScript/index.js"></script>  <!--javascript link file-->
+        
+       <script src="jslib/jquery-3.3.1.min.js"></script>
+       <link rel="stylesheet" href="./css/stylelayout.css"> <!--css link file-->
+       <link rel="stylesheet" href="./css/header.css"> <!--css link file-->
+        <link rel="stylesheet" href="./css/Footer.css"> <!--css footer link-->
+
+       <style>
+           #MapArea{
+            width: 100%;
+            height: 550px;
+        }
+          html, body{
+               padding: 0px;
+               margin: 0px;
+           }
+       </style>
+   </head>
+   
+   
+   <body>
+   
+    <font size="6" color="#0000FF"><p style="text-align:center">Store Location</font><p>
+	<div id="MapArea"></div>
+	
+
+    <script>
+        function initMap() {
+
+            //map attribute
+            var options = {
+                zoom: 8,
+                center: { lat: 22.36428, lng: 114.1094969999999 }
+            }
+            //show map
+            var map = new google.maps.Map(document.getElementById('MapArea'), options);
+
+            //calling marker function to add marker icon and information
+            addMarker({ coords: { lat: 22.266658, lng: 114.171520 },
+                iconimage: './Picture/m1.png',
+                content: '<h3>supercar store 1</h3>'
+            });
+
+            addMarker({ coords: { lat: 22.325837, lng: 114.239374 },
+                iconimage: './Picture/m2.png',
+                content: '<h3>supercar store 2</h3>'
+            });
+
+            addMarker({ coords: { lat: 22.405762, lng: 114.190281 },
+                iconimage: './Picture/m3.png',
+                content: '<h3>supercar store 3</h3>'
+            });
+
+
+            /*
+            //add marker in the map
+            var marker = new google.maps.Marker({
+            position: { lat: 22, lng: 114 },
+            map: map,
+            icon: './Picture/m3.png'
+            });
+            var information_store = new google.maps.InfoWindow({
+            content: '<h1>supercar store</h1>'
+            });
+            marker.addListener('click', function () {
+            information_store.open(map,marker);
+            });
+            */
+
+            //marker function
+            function addMarker(position_coords) {
+                var marker = new google.maps.Marker({
+                    position: position_coords.coords,
+                    map: map,
+                    icon: position_coords.iconimage
+                });
+
+                //check for information in the map's icon
+                if (position_coords.content) {
+                    var information_store = new google.maps.InfoWindow({
+                        content: position_coords.content
+                    });
+                    marker.addListener('click', function () {
+                        information_store.open(map, marker);
+                    });
+                }
+            }
+
+        }
+    </script>
+
+     <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4-exs5LNQnG7d3rCA23IY7IA7-8lhiaI&callback=initMap">
+    </script>
+
+	
+            
+			
+			<footer class="footer-container">
+
+			<div class="footer-left">
+
+
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+					·
+					<a href="GuestbookIndex.php">GuestBook</a>
+					·
+					<a href="About.html">About</a>
+					·
+                    <a href="./shopping_cart/shoppingcart.php">Shopping</a>
+                    .
+                    <a href="#">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Sports car Company &copy; 2018</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>地區:地區:灣仔,火炭,將軍澳</span>
+					<a href="GPS.html">詳情請按這裏</a></p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>電話: +852 68005521</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p>電郵:<a href="mailto: 2018projectdb@gmail.com"> 2018projectdb@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>關於</span>
+					讓人們隨時隨地買車,了解品牌,交流心得,分享感想的平台
+				</p>
+
+				<div class="footer-icons">
+			<a href="https://zh-hk.facebook.com/" class="fa fa-facebook"></a>
+			<a href="https://twitter.com/?lang=zh-tw" class="fa fa-twitter"></a>
+			<a href="https://www.google.com.hk/" class="fa fa-google"></a>
+			<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+				</div>
+
+			</div>
+		
+		<div id="footer">
+			 <p>
+			  Webpage made by Chiu Ka Yau,CHEN xuchu,吳國宏 </a>
+			  </p>
+		 </div>	  
+    </footer>  
+	
+       <!--<button onclick="getLocation()">click me</button>
+        <p id="demo"></p>
+
+    <script>
+        var x = document.getElementById("demo");
+
+            function getLocation() {
+                if (navigator.geolocation) {
+                 navigator.geolocation.getCurrentPosition(showPosition);
+                    } else { 
+                 x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+             }
+
+            function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude + 
+                        "<br>Longitude: " + position.coords.longitude;
+                }
+            </script>-->
+			
+			
+   </body>
+   
+   
+</html>
